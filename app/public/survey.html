@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FriendFinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3><b>About You</b></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="question1">1) Communication is the most important aspect of a successful
+                    relationship.</label>
+                <select class="form-control" id="q1">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question2">2) A sentimental gift is more meaningful than an expensive one.</label>
+                <select class="form-control" id="q2">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question3">3) I don’t like things to be a mess, I like to tidy up.</label>
+                <select class="form-control" id="q3">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question4">4) It is very important that my friends and family to like my significant
+                    other.</label>
+                <select class="form-control" id="q4">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question5">5) Visiting with family during the holidays are very important.</label>
+                <select class="form-control" id="q5">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question6">6) Two kids are the perfect amount.</label>
+                <select class="form-control" id="q6">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question7">7) Responsible, serious and determined are top qualities of a significant
+                    other.</label>
+                <select class="form-control" id="q7">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question8">8) Religion is not important.</label>
+                <select class="form-control" id="q8">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question9">9) I would rather live in the suburbs than a city.</label>
+                <select class="form-control" id="q9">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <label for="question10">10) I am very much a morning person.</label>
+                <select class="form-control" id="q10">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+                    <i class="fas fa-check"></i>
+                    Submit</button>
+                <br>
+            </div>
+        </form>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                    |
+                    <a href="https://github.com/AshleyFreedenberg/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="results-modal" class="modal fade in" role="dialog" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><strong>Your Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            var newfriendsData = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+            console.log(newfriendsData);
+
+            $.post("/api/friends", newfriendsData,
+                function () {
+                    $("#name").val(""),
+                    $("#photo").val(""),
+                    $("#q1").val(""),
+                    $("#q2").val(""),
+                    $("#q3").val(""),
+                    $("#q4").val(""),
+                    $("#q5").val(""),
+                    $("#q6").val(""),
+                    $("#q7").val(""),
+                    $("#q8").val(""),
+                    $("#q9").val(""),
+                    $("#q10").val("")
+                });
+
+            // $.post("/api/friends", friendsData, function (data) {
+
+            //     $("#match-name").text(data.name);
+            //     $("#match-img").attr("src", data.photo);
+
+            //     $("#results-modal").modal("toggle");
+
+            // });
+        });
+    </script>
+</body>
+
+</html>
